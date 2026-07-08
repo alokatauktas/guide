@@ -1,0 +1,570 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Best Online Sportsbooks in the US 2026 | Demo Guide</title>
+    <meta name="description" content="A self-contained guide-style landing page for sportsbook comparisons, built as a static demo with all action buttons disabled." />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #08101d;
+        --bg-soft: #0d1728;
+        --panel: #101b2f;
+        --panel-2: #13223a;
+        --text: #f8fbff;
+        --muted: #9db0cb;
+        --line: rgba(255,255,255,.09);
+        --line-strong: rgba(255,255,255,.16);
+        --accent: #58e1bc;
+        --accent-2: #79a4ff;
+        --warn: #ffd36a;
+        --shadow: 0 26px 80px rgba(2, 8, 20, .42);
+        --radius: 24px;
+      }
+      * { box-sizing: border-box; }
+      html { scroll-behavior: smooth; }
+      body {
+        margin: 0;
+        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+        color: var(--text);
+        background:
+          radial-gradient(circle at top left, rgba(121,164,255,.18), transparent 26%),
+          radial-gradient(circle at 85% 0%, rgba(88,225,188,.13), transparent 18%),
+          linear-gradient(180deg, #09111f 0%, #08101d 100%);
+      }
+      a { color: inherit; }
+      .container { width: min(1200px, calc(100% - 32px)); margin: 0 auto; }
+      .badge {
+        display: inline-flex; align-items: center; gap: 8px; padding: 8px 14px; border-radius: 999px;
+        background: rgba(88,225,188,.12); color: var(--accent); border: 1px solid rgba(88,225,188,.18);
+        font-size: 12px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+      }
+      .dot { width: 8px; height: 8px; border-radius: 999px; background: var(--accent); box-shadow: 0 0 16px var(--accent); }
+      .hero {
+        position: relative; overflow: hidden; min-height: 100svh;
+        padding-bottom: 36px;
+        background:
+          linear-gradient(180deg, rgba(4, 10, 20, .45), rgba(4, 10, 20, .9)),
+          radial-gradient(circle at center, rgba(121,164,255,.18), transparent 34%),
+          linear-gradient(135deg, #0b1630, #09111f 48%, #0a1322 100%);
+      }
+      .grid-pattern {
+        position: absolute; inset: 0; opacity: .16; pointer-events: none;
+        background-image:
+          linear-gradient(rgba(255,255,255,.06) 1px, transparent 1px),
+          linear-gradient(90deg, rgba(255,255,255,.06) 1px, transparent 1px);
+        background-size: 52px 52px;
+        mask-image: linear-gradient(180deg, rgba(0,0,0,.9), rgba(0,0,0,.25), transparent);
+      }
+      nav {
+        position: sticky; top: 0; z-index: 20; backdrop-filter: blur(18px);
+        background: rgba(8, 16, 29, .66); border-bottom: 1px solid rgba(255,255,255,.06);
+      }
+      .nav-inner {
+        display: flex; align-items: center; justify-content: space-between; gap: 16px;
+        min-height: 76px;
+      }
+      .brand {
+        display: flex; align-items: center; gap: 14px; text-decoration: none;
+      }
+      .brand-mark {
+        width: 42px; height: 42px; border-radius: 14px;
+        display: grid; place-items: center; font-weight: 800;
+        background: linear-gradient(135deg, var(--accent), var(--accent-2));
+        color: #06101f; box-shadow: 0 12px 30px rgba(88,225,188,.22);
+      }
+      .brand-copy strong { display: block; letter-spacing: .03em; }
+      .brand-copy span { display: block; color: var(--muted); font-size: 13px; }
+      .nav-links { display: flex; flex-wrap: wrap; gap: 18px; }
+      .nav-links a {
+        text-decoration: none; color: var(--muted); font-size: 14px; font-weight: 600;
+      }
+      .nav-links a:hover { color: var(--text); }
+      .hero-content { position: relative; z-index: 1; padding: 72px 0 32px; }
+      .hero-layout {
+        display: grid; grid-template-columns: 1.2fr .8fr; gap: 28px; align-items: end;
+      }
+      h1 {
+        margin: 18px 0 16px; font-size: clamp(3rem, 8vw, 6.8rem); line-height: .92; letter-spacing: -.04em;
+      }
+      .lead { font-size: clamp(1rem, 2vw, 1.16rem); color: #cad6ea; line-height: 1.75; max-width: 750px; }
+      .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; margin: 28px 0 24px; }
+      .btn, .btn-muted {
+        display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+        padding: 0 20px; border-radius: 999px; font-weight: 700; text-decoration: none;
+        border: 1px solid transparent;
+      }
+      .btn { background: linear-gradient(135deg, var(--accent), #7af1d2); color: #07111d; }
+      .btn-muted { background: rgba(255,255,255,.04); color: var(--text); border-color: rgba(255,255,255,.12); }
+      .btn[aria-disabled="true"], .offer-btn[aria-disabled="true"] {
+        cursor: not-allowed; opacity: .78;
+      }
+      .micro-note { color: var(--warn); font-size: 13px; margin-top: 10px; }
+      .stat-row {
+        margin-top: 36px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px;
+      }
+      .stat {
+        padding: 18px; border: 1px solid var(--line); border-radius: 18px; background: rgba(255,255,255,.03);
+      }
+      .stat strong { display: block; font-size: 1.8rem; margin-bottom: 4px; }
+      .stat span { color: var(--muted); font-size: 14px; }
+      .hero-panel {
+        border: 1px solid var(--line); background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+        border-radius: 28px; padding: 24px; box-shadow: var(--shadow);
+      }
+      .hero-panel h2 { margin: 0 0 16px; font-size: 1.2rem; }
+      .toc-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 12px; }
+      .toc-list a {
+        display: flex; justify-content: space-between; align-items: center; gap: 12px; text-decoration: none;
+        padding: 14px 16px; border: 1px solid var(--line); border-radius: 16px; background: rgba(255,255,255,.02);
+      }
+      .toc-list a span:last-child { color: var(--muted); }
+      .section {
+        padding: 76px 0;
+      }
+      .section-alt { background: linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,0)); }
+      .section-head { max-width: 780px; margin-bottom: 34px; }
+      .eyebrow { color: var(--accent); text-transform: uppercase; letter-spacing: .16em; font-size: 12px; font-weight: 800; }
+      h2 { margin: 10px 0 14px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1; }
+      h3 { font-size: 1.2rem; margin: 0 0 10px; }
+      .section-copy { color: var(--muted); line-height: 1.8; }
+      .offers { display: grid; gap: 18px; }
+      .offer-card {
+        display: grid; grid-template-columns: 1.1fr .7fr .55fr .55fr; gap: 18px; align-items: center;
+        padding: 22px; border-radius: 24px; border: 1px solid var(--line); background: linear-gradient(180deg, var(--panel), var(--panel-2));
+        box-shadow: var(--shadow);
+      }
+      .offer-brand { display: flex; align-items: center; gap: 16px; }
+      .logo {
+        width: 68px; height: 68px; border-radius: 20px; display: grid; place-items: center;
+        font-size: 1.2rem; font-weight: 800; color: #07111d;
+      }
+      .brand-meta strong { display: block; font-size: 1.1rem; }
+      .brand-meta span { display: block; margin-top: 5px; color: var(--muted); font-size: 14px; }
+      .score { text-align: center; }
+      .score strong { display: block; font-size: 1.8rem; }
+      .score span { color: var(--muted); font-size: 13px; }
+      .offer-copy { color: #e8eef8; font-weight: 600; }
+      .offer-copy small, .disclaimer { display: block; color: var(--muted); font-weight: 500; line-height: 1.55; margin-top: 8px; }
+      .offer-btn {
+        justify-self: end; display: inline-flex; align-items: center; justify-content: center; min-height: 48px;
+        min-width: 164px; padding: 0 18px; border-radius: 999px; border: 1px solid rgba(88,225,188,.24);
+        background: rgba(88,225,188,.12); color: var(--text); font-weight: 800; text-decoration: none;
+      }
+      .columns-2 { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px; }
+      .card {
+        padding: 24px; border-radius: 22px; border: 1px solid var(--line); background: rgba(255,255,255,.03);
+      }
+      .card p, .card li { color: var(--muted); line-height: 1.75; }
+      ul.clean { margin: 0; padding-left: 18px; }
+      .chips { display: flex; flex-wrap: wrap; gap: 10px; }
+      .chip {
+        display: inline-flex; align-items: center; padding: 10px 14px; border-radius: 999px;
+        background: rgba(121,164,255,.12); border: 1px solid rgba(121,164,255,.18); color: #dbe6ff; font-size: 14px; font-weight: 600;
+      }
+      .sports-grid, .types-grid, .faq-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
+      .sport-card, .type-card, .faq-card {
+        padding: 22px; border-radius: 22px; border: 1px solid var(--line); background: rgba(255,255,255,.025);
+      }
+      .sport-card p, .type-card p, .faq-card p { color: var(--muted); line-height: 1.7; margin: 0; }
+      .tip-list { display: grid; gap: 16px; }
+      .tip {
+        padding: 18px 20px; border-radius: 18px; border: 1px solid var(--line); background: rgba(255,255,255,.03);
+      }
+      .footer {
+        padding: 30px 0 50px; border-top: 1px solid rgba(255,255,255,.06); color: var(--muted); font-size: 14px;
+      }
+      .footer-row { display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+      @media (max-width: 1100px) {
+        .hero-layout, .offer-card, .sports-grid, .types-grid, .faq-grid { grid-template-columns: 1fr; }
+        .offer-btn { justify-self: stretch; }
+        .score { text-align: left; }
+      }
+      @media (max-width: 760px) {
+        .nav-inner { padding: 12px 0; align-items: flex-start; }
+        .nav-links { display: none; }
+        .columns-2, .stat-row { grid-template-columns: 1fr; }
+        .hero-content { padding-top: 44px; }
+        h1 { font-size: 2.8rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <section class="hero" id="top">
+      <div class="grid-pattern"></div>
+      <nav>
+        <div class="container nav-inner">
+          <a class="brand" href="#top">
+            <div class="brand-mark">AG</div>
+            <div class="brand-copy">
+              <strong>Auktas Guides</strong>
+              <span>Static comparison guide demo</span>
+            </div>
+          </a>
+          <div class="nav-links">
+            <a href="#rankings">Rankings</a>
+            <a href="#bonuses">Bonuses</a>
+            <a href="#sports">Sports</a>
+            <a href="#banking">Banking</a>
+            <a href="#faq">FAQs</a>
+          </div>
+        </div>
+      </nav>
+      <div class="container hero-content">
+        <div class="hero-layout">
+          <div>
+            <span class="badge"><span class="dot"></span> Updated for 2026</span>
+            <h1>Best Online Sportsbooks in the US</h1>
+            <p class="lead">This page mirrors the high-conversion guide structure of the reference page, but it uses original styling, original demo copy, synthetic brands, and intentionally disabled call-to-action buttons. It is ready to clone for future guides inside the same <strong>guide</strong> repo.</p>
+            <div class="hero-actions">
+              <a class="btn" href="#rankings">View rankings</a>
+              <a class="btn-muted" href="#bonuses">See bonus types</a>
+            </div>
+            <div class="micro-note">Demo mode: all operator offer buttons are non-working by design.</div>
+            <div class="stat-row">
+              <div class="stat"><strong>10</strong><span>Ranked demo operators</span></div>
+              <div class="stat"><strong>7</strong><span>Guide sections copied in structure</span></div>
+              <div class="stat"><strong>0</strong><span>Live affiliate links</span></div>
+            </div>
+          </div>
+          <aside class="hero-panel">
+            <h2>Inside this guide</h2>
+            <div class="section-copy" style="margin-bottom:16px">A quick-jump table of contents based on the same long-form editorial pattern.</div>
+            <div class="toc-list">
+              <a href="#rankings"><span>01. Ranked sportsbooks</span><span>Top list</span></a>
+              <a href="#bonuses"><span>02. Bonus breakdowns</span><span>Promos</span></a>
+              <a href="#sports"><span>03. Popular sports</span><span>Coverage</span></a>
+              <a href="#banking"><span>04. Banking methods</span><span>Payments</span></a>
+              <a href="#criteria"><span>05. What to look for</span><span>Checklist</span></a>
+              <a href="#bet-types"><span>06. Popular bet types</span><span>Basics</span></a>
+              <a href="#mobile"><span>07. Mobile betting</span><span>Apps</span></a>
+              <a href="#legal"><span>08. US legality</span><span>Overview</span></a>
+              <a href="#tips"><span>09. Five tips</span><span>Practical</span></a>
+              <a href="#faq"><span>10. FAQs</span><span>Answers</span></a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <main>
+      <section class="section" id="rankings">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Rankings</div>
+            <h2>Top sportsbook picks</h2>
+            <p class="section-copy">These cards recreate the comparison-table feel of the reference page while keeping every offer interaction disabled. Brand names, ratings, and promotional copy below are placeholder demo content.</p>
+          </div>
+          <div class="offers">
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#7af1d2,#58e1bc)">NB</div>
+                <div class="brand-meta"><strong>NorthBet</strong><span>Best for fast withdrawals</span></div>
+              </div>
+              <div class="score"><strong>5.0/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Up to $1,250 in bonus bets + early cash-out tools<small class="disclaimer">Demo copy only. No real-money offer or redemption flow is attached.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#ffd36a,#ff9b6a)">RS</div>
+                <div class="brand-meta"><strong>Redline Sports</strong><span>Best for live betting</span></div>
+              </div>
+              <div class="score"><strong>4.9/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">$300 bonus bet safety net + one-tap live markets<small class="disclaimer">Buttons are intentionally non-working for this replication request.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#93b2ff,#5c7bff)">PA</div>
+                <div class="brand-meta"><strong>Pinnacle Arena</strong><span>Best odds board layout</span></div>
+              </div>
+              <div class="score"><strong>4.8/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Bet $10, get $150 in site credits + boosted same-game parlays<small class="disclaimer">Static design sample; no outbound behavior.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#ffa6cf,#ff6ea8)">VC</div>
+                <div class="brand-meta"><strong>Victory Club</strong><span>Best for new users</span></div>
+              </div>
+              <div class="score"><strong>4.7/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">100% first-deposit match up to $500 + beginner betting hub<small class="disclaimer">Guide-only button state.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#8ff0ff,#54b2ff)">FD</div>
+                <div class="brand-meta"><strong>FourthDown</strong><span>Best for NFL props</span></div>
+              </div>
+              <div class="score"><strong>4.6/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">250% parlay booster + deep player prop menus<small class="disclaimer">This page disables all commercial conversion links.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#c8ff8f,#75e85e)">GP</div>
+                <div class="brand-meta"><strong>Gridiron Pro</strong><span>Best loyalty rewards</span></div>
+              </div>
+              <div class="score"><strong>4.5/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Tiered cashback rewards + weekly free-bet missions<small class="disclaimer">Display-only CTA.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#ffe785,#ffc247)">SC</div>
+                <div class="brand-meta"><strong>SideCourt</strong><span>Best for basketball bettors</span></div>
+              </div>
+              <div class="score"><strong>4.4/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Daily boosted picks for NBA and NCAA action<small class="disclaimer">No external offer routing included.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#d0b2ff,#8f67ff)">OD</div>
+                <div class="brand-meta"><strong>OddsDeck</strong><span>Best mobile experience</span></div>
+              </div>
+              <div class="score"><strong>4.3/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Clean slip builder + biometrics login + quick deposits<small class="disclaimer">Disabled button per request.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#9ef6d8,#2bc6a3)">HB</div>
+                <div class="brand-meta"><strong>Harbor Bet</strong><span>Best banking menu</span></div>
+              </div>
+              <div class="score"><strong>4.2/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Card, ACH, PayPal, and instant withdrawal support<small class="disclaimer">This is presentation-only content.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+            <article class="offer-card">
+              <div class="offer-brand">
+                <div class="logo" style="background:linear-gradient(135deg,#ffb0b0,#ff7a7a)">SP</div>
+                <div class="brand-meta"><strong>SummitPlay</strong><span>Best same-game parlay builder</span></div>
+              </div>
+              <div class="score"><strong>4.1/5</strong><span>Editor score</span></div>
+              <div class="offer-copy">Flexible multi-leg parlay creation with stake presets<small class="disclaimer">All action controls remain inactive.</small></div>
+              <a class="offer-btn" href="javascript:void(0)" aria-disabled="true">Offer disabled</a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="bonuses">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Promotions</div>
+            <h2>Bonuses at the best online sportsbooks</h2>
+            <p class="section-copy">The reference page leans heavily on bonus education, so this version keeps the same editorial rhythm: define the promotion, explain why it matters, and outline what users should check before claiming anything.</p>
+          </div>
+          <div class="columns-2">
+            <div class="card">
+              <h3>Welcome bonus</h3>
+              <p>Many sportsbooks compete hardest on the first deposit. The best offers feel simple: a clear match percentage, a fair maximum, and terms that do not bury the useful details.</p>
+              <ul class="clean">
+                <li>Transparent rollover rules</li>
+                <li>Minimum deposit that feels reasonable</li>
+                <li>Enough time to activate and use the bonus</li>
+                <li>Few restrictions on eligible markets</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>No-deposit bonus</h3>
+              <p>These are rarer, but they are appealing because users can test a platform with limited risk. The catch is usually hidden in withdrawal restrictions and low maximum cash-out rules.</p>
+              <ul class="clean">
+                <li>Can winnings be withdrawn without another deposit?</li>
+                <li>Are the registration steps lightweight or intrusive?</li>
+                <li>Do bonus bets expire too quickly?</li>
+                <li>Are only a few niche markets eligible?</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>Free bets</h3>
+              <p>Free-bet promos are useful when they appear regularly, not just once. Good operators make them accessible through weekly promos, loss insurance, or loyalty milestones.</p>
+            </div>
+            <div class="card">
+              <h3>Reload offers</h3>
+              <p>These reward repeat deposits. They are usually smaller than welcome offers, so the value comes from how often they appear and how fair the turnover requirement is.</p>
+            </div>
+            <div class="card">
+              <h3>Odds boosts</h3>
+              <p>Odds boosts only matter when they truly improve market value. A bigger number on the screen is not enough if the base line was already less competitive than the market.</p>
+            </div>
+            <div class="card">
+              <h3>Parlay insurance & loyalty bonuses</h3>
+              <p>These promos keep users active after signup. They work best when the refund cap is realistic and reward tiers feel reachable rather than artificially stretched out.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="sports">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Coverage</div>
+            <h2>Popular sports at top sportsbooks</h2>
+            <p class="section-copy">This section mirrors the category-card treatment of the original page: quick reasons each sport matters and the betting behavior it usually attracts.</p>
+          </div>
+          <div class="sports-grid">
+            <div class="sport-card"><h3>NFL</h3><p>Still the headline market for many US bettors, with deep prop menus, live lines, and weekly media attention driving volume.</p></div>
+            <div class="sport-card"><h3>NBA</h3><p>Fast pace and frequent games make basketball a natural fit for player props and in-play betting.</p></div>
+            <div class="sport-card"><h3>MLB</h3><p>Daily fixtures and data-rich matchups appeal to users who want many smaller betting decisions over a long season.</p></div>
+            <div class="sport-card"><h3>NHL</h3><p>Moneylines, puck lines, and totals attract bettors who prefer tighter markets and lower scoring variance.</p></div>
+            <div class="sport-card"><h3>Soccer</h3><p>Global leagues, constant fixtures, and varied bet types make soccer a core menu category for major apps.</p></div>
+            <div class="sport-card"><h3>College sports</h3><p>High-engagement weekends, rivalry games, and conference futures keep NCAA action central to US sportsbooks.</p></div>
+            <div class="sport-card"><h3>UFC / MMA</h3><p>Fighter props, method-of-victory picks, and event-driven spikes make combat sports a specialist favorite.</p></div>
+            <div class="sport-card"><h3>Tennis & golf</h3><p>Match-level markets, tournament outrights, and player-specific storylines keep these categories relevant year-round.</p></div>
+            <div class="sport-card"><h3>Esports & niche sports</h3><p>Alternative audiences often look for broader menus, flexible bankroll options, and faster-moving specialty lines.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="banking">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Payments</div>
+            <h2>Banking methods at the best betting sites</h2>
+            <p class="section-copy">The best experience is not just about deposit speed. It is about transparent limits, realistic withdrawal timelines, and support for the payment methods users already trust.</p>
+          </div>
+          <div class="card" style="margin-bottom:18px">
+            <div class="chips">
+              <span class="chip">Debit / credit cards</span>
+              <span class="chip">ACH / online banking</span>
+              <span class="chip">PayPal / e-wallets</span>
+              <span class="chip">Bank transfer</span>
+              <span class="chip">Prepaid cards</span>
+              <span class="chip">Crypto where supported</span>
+            </div>
+          </div>
+          <div class="columns-2">
+            <div class="card">
+              <h3>What users notice first</h3>
+              <ul class="clean">
+                <li>How fast deposits confirm</li>
+                <li>Whether withdrawals feel frictionless or delayed</li>
+                <li>If verification is explained before cash-out</li>
+                <li>Whether fees or hidden limits appear later</li>
+              </ul>
+            </div>
+            <div class="card">
+              <h3>What strong operators usually provide</h3>
+              <ul class="clean">
+                <li>At least three mainstream payment paths</li>
+                <li>Clear minimum and maximum amounts</li>
+                <li>Timelines that are stated honestly</li>
+                <li>Mobile-friendly deposit flows</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="criteria">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Checklist</div>
+            <h2>What to look for in an online betting site</h2>
+            <p class="section-copy">The original article evaluates platforms across common conversion points. This version condenses that into four decision areas.</p>
+          </div>
+          <div class="columns-2">
+            <div class="card"><h3>Live betting</h3><p>Fast odds refreshes, clean cash-out controls, and a slip that stays responsive under pressure are more valuable than flashy visuals alone.</p></div>
+            <div class="card"><h3>Bonuses</h3><p>Users compare headline size first, but experienced bettors look at rollover, expiration, and how restricted the eligible markets are.</p></div>
+            <div class="card"><h3>Odds & market variety</h3><p>A good operator offers strong pricing across mainstream sports plus enough depth on props, futures, and same-game parlays.</p></div>
+            <div class="card"><h3>Payment options</h3><p>Operators win trust when deposits are easy, withdrawals are realistic, and identity verification is predictable rather than surprising.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="bet-types">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Betting basics</div>
+            <h2>Popular bet types</h2>
+            <p class="section-copy">The page also includes educational sections for users who are new to sportsbooks. This keeps that conversion-friendly pattern intact.</p>
+          </div>
+          <div class="types-grid">
+            <div class="type-card"><h3>Moneyline</h3><p>A simple pick on who wins the event or match.</p></div>
+            <div class="type-card"><h3>Point spread</h3><p>A margin-based bet that balances favorites and underdogs.</p></div>
+            <div class="type-card"><h3>Totals</h3><p>A prediction on whether combined scoring goes over or under a posted number.</p></div>
+            <div class="type-card"><h3>Props</h3><p>Wagers tied to player or team events, often used for deeper game-specific opinions.</p></div>
+            <div class="type-card"><h3>Futures</h3><p>Longer-term bets on outcomes like champions, award winners, or season totals.</p></div>
+            <div class="type-card"><h3>Parlays & live bets</h3><p>Higher-risk combinations or in-play wagers placed while a game is underway.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="mobile">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Apps</div>
+            <h2>Mobile betting in the US 2026</h2>
+            <p class="section-copy">A modern sportsbook guide needs a mobile angle. Most users compare operators on app responsiveness, finger-friendly slip design, login flow, and how easily they can move between markets.</p>
+          </div>
+          <div class="card">
+            <ul class="clean">
+              <li>Fast account access with biometrics</li>
+              <li>Compact odds boards that still feel readable</li>
+              <li>Quick deposit controls without excessive taps</li>
+              <li>Live updates that do not lag during big moments</li>
+              <li>Visible settlement and withdrawal status after bets close</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="legal">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Regulation</div>
+            <h2>Is sports betting legal in the US?</h2>
+            <p class="section-copy">Legality varies by state, licensing model, and operator availability. A guide page like this should frame legality as a state-by-state issue instead of a single nationwide answer.</p>
+          </div>
+          <div class="columns-2">
+            <div class="card"><h3>What changes by state</h3><p>Registration rules, promotional restrictions, tax treatment, available apps, and even which bet types are permitted can differ substantially.</p></div>
+            <div class="card"><h3>What readers should verify</h3><p>Age requirements, local licensing status, identity checks, and whether a platform is authorized where they are located.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="tips">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">Practical advice</div>
+            <h2>Five tips for sportsbook users</h2>
+            <p class="section-copy">The original page closes with practical betting habits. This demo keeps that same trust-building structure.</p>
+          </div>
+          <div class="tip-list">
+            <div class="tip"><h3>1. Compare live odds before placing reactive bets</h3><p class="section-copy">Momentum can make bad prices look exciting. Users benefit from checking whether an in-play line still offers value.</p></div>
+            <div class="tip"><h3>2. Avoid building giant parlays by default</h3><p class="section-copy">More legs may look attractive, but they often trade clarity for low-probability upside.</p></div>
+            <div class="tip"><h3>3. Watch injury news and lineup context</h3><p class="section-copy">Small roster changes can move prices quickly, especially in props and same-day markets.</p></div>
+            <div class="tip"><h3>4. Read bonus terms before opting in</h3><p class="section-copy">The difference between a useful promo and a frustrating one usually lives in the rollover details.</p></div>
+            <div class="tip"><h3>5. Set a fixed bankroll plan</h3><p class="section-copy">A predictable staking plan matters more over time than any one promotion or winning streak.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="faq">
+        <div class="container">
+          <div class="section-head">
+            <div class="eyebrow">FAQs</div>
+            <h2>Common questions</h2>
+            <p class="section-copy">A concise FAQ block helps the page feel complete and closer to the structure of the source layout.</p>
+          </div>
+          <div class="faq-grid">
+            <div class="faq-card"><h3>Are the buttons on this page active?</h3><p>No. All sportsbook offer buttons were intentionally disabled for this replica build.</p></div>
+            <div class="faq-card"><h3>Can this structure be reused for more guides?</h3><p>Yes. Each new guide can live in its own named folder inside the <code>guide</code> repo.</p></div>
+            <div class="faq-card"><h3>Is this based on the same content as the reference?</h3><p>The page mirrors the overall structure and UX pattern, but the copy, brand names, and visual treatment here are original.</p></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-row">
+        <div>Built for Auktas guide replication workflow.</div>
+        <div><a href="../index.html">Back to guide library</a></div>
+      </div>
+    </footer>
+  </body>
+</html>
