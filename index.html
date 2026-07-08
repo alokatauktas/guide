@@ -1,80 +1,626 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Auktas Guide Library</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #09111f;
-        --panel: #101a2e;
-        --muted: #8ea0bf;
-        --text: #f5f7fb;
-        --line: rgba(255,255,255,.08);
-        --accent: #5be7c4;
-        --accent-2: #6a8dff;
-      }
-      * { box-sizing: border-box; }
-      body {
-        margin: 0;
-        font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
-        background:
-          radial-gradient(circle at top left, rgba(106,141,255,.2), transparent 34%),
-          radial-gradient(circle at top right, rgba(91,231,196,.12), transparent 26%),
-          var(--bg);
-        color: var(--text);
-      }
-      .wrap { max-width: 1100px; margin: 0 auto; padding: 40px 20px 72px; }
-      .hero {
-        border: 1px solid var(--line);
-        background: linear-gradient(180deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
-        border-radius: 28px;
-        padding: 32px;
-        margin-bottom: 28px;
-      }
-      .eyebrow {
-        display: inline-block;
-        padding: 8px 12px;
-        border-radius: 999px;
-        background: rgba(91,231,196,.12);
-        color: var(--accent);
-        font-size: 12px;
-        letter-spacing: .12em;
-        text-transform: uppercase;
-      }
-      h1 { font-size: clamp(2.2rem, 6vw, 4.8rem); margin: 16px 0 10px; line-height: .95; }
-      p { color: var(--muted); line-height: 1.7; }
-      .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
-      .card {
-        border: 1px solid var(--line);
-        border-radius: 24px;
-        padding: 22px;
-        background: var(--panel);
-        text-decoration: none;
-        color: inherit;
-        transition: transform .18s ease, border-color .18s ease, box-shadow .18s ease;
-      }
-      .card:hover { transform: translateY(-3px); border-color: rgba(91,231,196,.34); box-shadow: 0 20px 60px rgba(0,0,0,.25); }
-      .slug { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; color: #a5b5d3; font-size: 13px; }
-      .cta { display: inline-flex; margin-top: 12px; color: var(--text); font-weight: 600; }
-    </style>
-  </head>
-  <body>
-    <main class="wrap">
-      <section class="hero">
-        <span class="eyebrow">Auktas static guides</span>
-        <h1>Guide library</h1>
-        <p>Named guide folders live under this directory so more long-form guide pages can be added cleanly over time.</p>
-      </section>
-      <section class="grid">
-        <a class="card" href="./best-online-sportsbooks-usa-2026/index.html">
-          <div class="slug">best-online-sportsbooks-usa-2026/</div>
-          <h2>Best Online Sportsbooks in the US 2026</h2>
-          <p>Affiliate-style comparison guide recreated as a static demo page with all offer buttons intentionally non-working.</p>
-          <span class="cta">Open guide →</span>
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Best Betting Sites in the US 2026 | The Escapist</title>
+  <meta name="description" content="The best betting sites in the US give you more than just odds — large welcome bonuses, same-day payouts, and hundreds of markets across America's favorite sports."/>
+  <link rel="shortcut icon" href="./assets/escapist-logo.svg"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="./blog.css"/>
+</head>
+<body>
+
+  <header class="site-header" id="top">
+    <div class="header-inner">
+      <a href="#top" class="site-logo">
+        <img src="./assets/escapist-logo.svg" alt="Escapist Magazine Logo"/>
+        <span>The Escapist</span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <ul class="header-nav">
+          <li><a href="#bonuses">Bonuses</a></li>
+          <li><a href="#sports">Sports</a></li>
+          <li><a href="#banking">Banking</a></li>
+          <li><a href="#bet-types">Bet Types</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="page-wrapper">
+    <main id="main-content">
+
+      <header class="article-header">
+        <div class="article-category">🎲 Sports Betting</div>
+        <h1 class="article-title">Best Betting Sites in the US 2026</h1>
+        <div class="author-byline">
+          <div class="author-avatar-fallback">CP</div>
+          <div class="author-info">
+            <span class="author-name">Charlie Pearson</span>
+            <span class="byline-sep">|</span>
+            <span class="byline-date">Last Updated On: Jun 24, 2026 8:06 pm CEST</span>
+          </div>
+        </div>
+      </header>
+
+      <div class="hero-image-wrap">
+        <img src="./assets/betting-sites-us.jpg.jpg" alt="Best Betting Sites in the US 2026" loading="eager"/>
+      </div>
+
+      <div class="prose">
+        <p>The best betting sites in the US give you more than just odds. They offer large welcome bonuses, same-day payouts, and hundreds of markets across America's favorite sports. You'll find early NFL lines, NBA player props, MLB futures, and stacked college football Saturdays.</p>
+        <p>These US sportsbooks stand out because they combine fast withdrawals with bigger promotions than most state-licensed apps. Whether you want to bet the Super Bowl, World Series, or even esports, our picks cover the top online betting sites available to US residents.</p>
+      </div>
+
+      <!-- Operator cards -->
+      <div class="operator-list" id="top-picks">
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/pulsz-logo.svg" alt="Pulsz Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">5.0</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">Get 130k GC + 65 FREE SC</div>
+          <a href="#" class="btn-play" id="play-pulsz-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/crown-coins-casino_125x60_Standard_Logo_Betting_Casino_DarkBG.svg" alt="Crown Coins Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.9</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">1.5M CC + 75 SC FREE + Spin to Win up to 100 SC FREE</div>
+          <a href="#" class="btn-play" id="play-crown-1">Play Now</a>
+        </div>
+        <p class="tnc-note">No purchase necessary. New users only. Void where prohibited by law. See T&amp;Cs. 19+</p>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/MegaBonanza_3_2.svg" alt="MegaBonanza Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.8</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">300% Value on Sign up and First Purchase<br/>300,000 GC + 22 FREE SC For $9.99</div>
+          <a href="#" class="btn-play" id="play-mega-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><div class="operator-logo-placeholder">Logo</div></div>
+          <div class="operator-rating"><span class="rating-score">4.7</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">Get Up To 500K GC + 105 Free SC + 1000 VIP Points</div>
+          <a href="#" class="btn-play" id="play-op4-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/hello-millions.svg" alt="Hello Millions Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.6</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">150% on First Purchase Up To GC 600K + SC 303 Free</div>
+          <a href="#" class="btn-play" id="play-hello-1">Play Now</a>
+        </div>
+        <p class="tnc-note">No purchase necessary. Not available in AL, CA, CT, DE, ID, KY, LA, MD, MI, MT, NV, NJ, NY, TN, WA, WV. Must be 21 or older.</p>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/mc-luck.svg" alt="MC Luck Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.5</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">120k GC + 60 FREE SC + WIN 500 FREE SC + Play with Crypto</div>
+          <a href="#" class="btn-play" id="play-mc-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/spreeNEW-DARK.svg" alt="Spree Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.4</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">Sign up and enjoy 150,000 GC + 2 SC Free</div>
+          <a href="#" class="btn-play" id="play-spree-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/casino-click.svg" alt="Casino Click Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.3</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">120k GC + 60 EXTRA FREE SC + Plus WIN 500 SC FREE</div>
+          <a href="#" class="btn-play" id="play-cc-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/splash-coins-2.svg" alt="Splash Coins Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.2</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">200% Extra Coins: 30 SC FREE + 30K Gold Coins</div>
+          <a href="#" class="btn-play" id="play-splash-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/spinblitz-usa_125x60_Standard_Logo_Betting_Casino_DarkBG.svg" alt="SpinBlitz Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.1</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">120k GC + WIN 500 FREE SC + 60 FREE SC</div>
+          <a href="#" class="btn-play" id="play-spinblitz-1">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/lonestar-casinosubtitle_125x60_Standard_Logo_Betting_Casino_DarkBG.svg" alt="Lonestar Casino Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.0</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">Get 200% Extra - 1,005,000 GC + 77.3 Free SC + 50 Free Spins</div>
+          <a href="#" class="btn-play" id="play-lonestar-1">Play Now</a>
+        </div>
+      </div>
+
+      <!-- Bonuses -->
+      <h2 id="bonuses">Bonuses at the Best Online Sportsbooks</h2>
+      <div class="prose"><p>The best online betting sites feature plenty of bonuses that can give your bankroll a boost. Let's discuss these offers and how to maximize your chances of winning with each.</p></div>
+
+      <div class="bonus-section">
+        <h3>Welcome Bonus (Deposit Match)</h3>
+        <p class="bonus-intro">Top online betting sites offer a generous welcome bonus, which usually matches your first deposit by a certain amount. You should look for welcome offers upwards of 100% matched up to $1,000.</p>
+        <strong class="bonus-label">What to Look for with a Sportsbook Welcome Bonus:</strong>
+        <ul class="bonus-checklist">
+          <li>Clear wagering requirements that don't give you a headache when reading them</li>
+          <li>12x rollover or lower</li>
+          <li>Few, if any, market restrictions</li>
+          <li>Reasonable minimum deposit (e.g., $20)</li>
+          <li>Fair expiry date (e.g., 14 days or longer)</li>
+        </ul>
+      </div>
+
+      <div class="bonus-section">
+        <h3>No Deposit Bonus</h3>
+        <p class="bonus-intro">Online betting sites occasionally hand out no-deposit bonuses to new signups and even existing bettors. These offers aren't very large (e.g., $10 free bet), but they can lead to 'free' winnings.</p>
+        <strong class="bonus-label">What to Look for with a No Deposit Bonus:</strong>
+        <ul class="bonus-checklist">
+          <li>Availability – sportsbook no deposit bonuses are rare, so jump on one if you see it</li>
+          <li>The ability to cash out winnings without depositing real money beforehand</li>
+          <li>Light registration requirements when you have to sign up</li>
+          <li>Reasonable rollover (i.e., under 15x)</li>
+          <li>Limited market restrictions</li>
+        </ul>
+      </div>
+
+      <div class="bonus-section">
+        <h3>Free Bets</h3>
+        <p class="bonus-intro">You can pick up plenty of free wagers at the best sportsbooks. Some sports betting sites give free bets away every week and/or through their VIP program.</p>
+        <strong class="bonus-label">What to Look for with Free Bets:</strong>
+        <ul class="bonus-checklist">
+          <li>Expiry dates longer than 1–3 days</li>
+          <li>Minimum odds of at least -200</li>
+          <li>Low rollover on free bet winnings</li>
+          <li>Daily/weekly availability from your favorite online sportsbook</li>
+        </ul>
+      </div>
+
+      <div class="bonus-section">
+        <h3>Reload Bonus</h3>
+        <p class="bonus-intro">Reload bonuses are a promotion that rewards your loyalty with extra funds when you top up. We commonly see reload offers in the 50% up to $100–$250 range. You can grab up to 25% extra on every deposit with a fair 7x rollover.</p>
+        <strong class="bonus-label">What to Look for with a Reload Bonus:</strong>
+        <ul class="bonus-checklist">
+          <li>Low rollover (5x–10x) since these bonuses are often small</li>
+          <li>More reload offers through the VIP program (if available)</li>
+          <li>Limited restrictions on bet types</li>
+          <li>Solid minimum odds in the -200 to -250 range</li>
+        </ul>
+      </div>
+
+      <div class="bonus-section">
+        <h3>Odds Boosts</h3>
+        <p class="bonus-intro">All the best online sportsbooks offer odds boosts to some capacity. They typically enhance odds on the underdog, like boosting +150 to +200.</p>
+        <strong class="bonus-label">What to Look for with Odds Boosts:</strong>
+        <ul class="bonus-checklist">
+          <li>Boosts that actually beat the market</li>
+          <li>Win limits higher than $50</li>
+          <li>Max bets worth more than $25</li>
+          <li>Not restricted to specific bet types (e.g., "only for 4+ leg parlays")</li>
+          <li>Dedicated odds boost sections at the best online sportsbooks</li>
+        </ul>
+      </div>
+
+      <div class="bonus-section">
+        <h3>Parlay Insurance</h3>
+        <p class="bonus-intro">Many top US sportsbooks now offer parlay insurance, refunding part of your stake if one leg loses. These promos typically apply to 4+ leg parlays and are credited as free bets.</p>
+        <strong class="bonus-label">What to Look for with Parlay Insurance:</strong>
+        <ul class="bonus-checklist">
+          <li>Each leg often needs to meet minimum odds (for example, -200 or longer)</li>
+          <li>Some sites only run parlay insurance on major leagues or specific events</li>
+          <li>Refund limits are usually capped between $25 and $50 per bet</li>
+        </ul>
+      </div>
+
+      <div class="bonus-section">
+        <h3>Loyalty Bonus</h3>
+        <p class="bonus-intro">The best betting sites commonly offer loyalty bonuses (e.g., free bets, cash) through their VIP programs. They also give better rewards as you continue placing wagers and increasing your VIP status.</p>
+        <strong class="bonus-label">What to Look for with a Loyalty Bonus:</strong>
+        <ul class="bonus-checklist">
+          <li>Automatic VIP program enrollment so you can earn loyalty bonuses immediately</li>
+          <li>Generous free bets and deposit bonuses that get better at higher tiers</li>
+          <li>Loyalty points that can be traded for rewards of your choosing</li>
+          <li>Unique perks like a VIP host and/or sporting event tickets/packages</li>
+          <li>The best betting sites will offer other rewards like birthday gifts and exclusive contests</li>
+        </ul>
+      </div>
+
+      <div class="operator-list">
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/pulsz-logo.svg" alt="Pulsz Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">5.0</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">Get 130k GC + 65 FREE SC</div>
+          <a href="#" class="btn-play" id="play-pulsz-2">Play Now</a>
+        </div>
+      </div>
+      <div class="show-more-wrap">
+        <button class="btn-show-more" id="show-more-btn">▼ Show More</button>
+      </div>
+
+      <!-- Sports -->
+      <h2 id="sports">Popular Sports at the Best Online Sportsbooks</h2>
+      <div class="prose"><p>The best betting sites offer a wide array of sports, from football and basketball to soccer and the Olympics. You can see what's commonly available at US-friendly online sportsbooks below and why each is worth considering.</p></div>
+
+      <div class="sports-grid">
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🏈</span> NFL</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> The most popular sport in America features endless betting opportunities from preseason until the Super Bowl.<br/><br/><strong>Key events:</strong> NFL Playoffs, Super Bowl<br/><strong>Popular bet types:</strong> Futures, live, spread, totals, parlay, SGP, props</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🏀</span> NBA</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> High score totals and constant action are great for props and live betting.<br/><br/><strong>Key events:</strong> NBA Playoffs, NBA Finals, In-Season Tournament<br/><strong>Popular bet types:</strong> Futures, live, moneyline, totals, parlay, SGP, props</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">⚾</span> MLB</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> Baseball is a stats lover's dream with soft lines throughout a 162-game schedule.<br/><br/><strong>Key events:</strong> MLB Playoffs, World Series<br/><strong>Popular bet types:</strong> Futures, live, moneyline, props, run line</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🏒</span> NHL</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> The NHL presents interesting bet types like the puck line and Grand Salami.<br/><br/><strong>Key events:</strong> NHL Playoffs, Stanley Cup Finals<br/><strong>Popular bet types:</strong> Grand Salami, moneyline, puck line, totals</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">⚽</span> Soccer</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> Heavy international presence with hundreds of leagues including MLS, Premier League and La Liga.<br/><br/><strong>Key events:</strong> Premier League, La Liga, Champions League, World Cup<br/><strong>Popular bet types:</strong> Asian handicap, BTTS, correct score, double chance</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🎓</span> College Sports</div>
+          <div class="sport-detail"><strong>Why they appeal:</strong> College football and basketball let alumni wager on their favorite schools.<br/><br/><strong>Key events:</strong> College Football Playoff, March Madness<br/><strong>Popular bet types:</strong> Futures, live, moneyline, spread, totals</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🥊</span> UFC/MMA</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> Bet on individual rounds, victory methods, props, and more.<br/><br/><strong>Key events:</strong> UFC Pay-Per-View events, UFC Fight Night<br/><strong>Popular bet types:</strong> Live, moneyline, round totals, round winner, winning method</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">⛳</span> Golf</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> Year-round betting opportunities with dozens of golfers per tournament.<br/><br/><strong>Key events:</strong> The Open, Masters, PGA Championship, US Open<br/><strong>Popular bet types:</strong> Each way, head-to-head, finishing position, outright, props</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🎾</span> Tennis</div>
+          <div class="sport-detail"><strong>Why it appeals:</strong> Both men's and women's tours feature high-profile tournaments year-round.<br/><br/><strong>Key events:</strong> Australian Open, French Open, US Open, Wimbledon<br/><strong>Popular bet types:</strong> Match winner, live, moneyline, next point, set spreads</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🎮</span> Esports</div>
+          <div class="sport-detail"><strong>Why they appeal:</strong> Wager on pros across CS2, League of Legends, Valorant, Fortnite, and Dota 2.<br/><br/><strong>Key events:</strong> World Championship (LoL), MSI, PGL Majors (CS2)<br/><strong>Popular bet types:</strong> First blood, map handicap, map winner, outright, total maps</div>
+        </div>
+        <div class="sport-card">
+          <div class="sport-card-title"><span class="sport-icon">🌐</span> Niche Sports</div>
+          <div class="sport-detail"><strong>Key sports:</strong> Alpine skiing, Aussie rules, cricket, darts, Olympics, rugby, snooker, water polo, volleyball<br/><br/><strong>Popular bet types:</strong> Futures, moneylines, props</div>
+        </div>
+      </div>
+
+      <!-- Banking -->
+      <h2 id="banking">Banking Methods at the Best Betting Sites</h2>
+      <div class="prose"><p>The top 10 online betting sites provide a variety of banking options, from cards to crypto. The fastest payout sportsbooks support Bitcoin and other popular coins for near-instant withdrawals.</p></div>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>Payment Method</th><th>Deposit Time</th><th>Withdrawal Time</th><th>Transaction Fees</th></tr>
+          </thead>
+          <tbody>
+            <tr><td><strong>Debit/Credit Card</strong></td><td>Almost Instant</td><td>Depends on bank</td><td>Sometimes</td></tr>
+            <tr><td><strong>Cryptocurrencies</strong></td><td>Almost Instant</td><td>1–60 minutes</td><td>Low blockchain fees</td></tr>
+            <tr><td><strong>E-Wallets</strong></td><td>Almost Instant</td><td>Up to 24 hours</td><td>Varies by provider</td></tr>
+            <tr><td><strong>Bank Transfer</strong></td><td>1–3 days</td><td>2–5 days</td><td>Often high</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- What to Look For -->
+      <h2 id="criteria">What to Look for in the Best Online Betting Sites</h2>
+      <div class="prose">
+        <p>The best online sportsbooks have certain qualities that make them stand out from the competition.</p>
+        <h3>Live Betting</h3>
+        <ul>
+          <li>Top online betting sites feature lots of daily in-play markets and fast platforms so you can place bets in real time.</li>
+          <li>A good live platform will also have helpful features, like live streaming, cash out, and visual game trackers.</li>
+        </ul>
+        <h3>Bonuses</h3>
+        <ul>
+          <li>Bonus variety is always important, with free bets, deposit bonuses, odds boosts being staples.</li>
+          <li>The best betting sites have achievable terms like low rollover (e.g., 10x) and longer expiry dates (e.g., 30 days).</li>
+        </ul>
+        <h3>Competitive Odds &amp; Market Variety</h3>
+        <ul>
+          <li>A quality sports betting site will provide competitive, if not market-leading, odds for most markets.</li>
+          <li>You'll also find plenty of odds boosts for different sports at the best online betting sites.</li>
+        </ul>
+        <h3>Payment Methods</h3>
+        <ul>
+          <li>We like a variety of fiat and crypto payment options, such as bank transfer, Bitcoin, Dogecoin, Ethereum, Mastercard, and Visa.</li>
+          <li>Fast withdrawal processing is important, with 0–24 hours being the industry standard.</li>
+        </ul>
+      </div>
+
+      <!-- Bet Types -->
+      <h2 id="bet-types">Popular Bet Types at the Best Online Sportsbooks</h2>
+      <div class="prose"><p>Let's quickly discuss the most popular bets you'll find at the best online sportsbooks.</p></div>
+
+      <div class="bet-types">
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Moneyline</h3><span class="bet-badge">Most Common</span></div>
+          <div class="bet-type-body">
+            <p>You simply try to pick the winning side. Favorites have negative odds (e.g. -175), while underdogs have positive odds (e.g. +140).</p>
+            <div class="odds-example">
+              <p>Tampa Bay Rays <strong>+140</strong> vs New York Yankees <strong>-175</strong></p>
+              <p>$100 on Yankees (-175) → $157.14 total, $57.14 profit</p>
+              <p>$100 on Rays (+140) → $240 total, $140 profit</p>
+            </div>
+          </div>
+        </div>
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Point Spread</h3><span class="bet-badge">Popular in NFL</span></div>
+          <div class="bet-type-body">
+            <p>Decide whether the favorite or underdog will cover their assigned point spread.</p>
+            <div class="odds-example">
+              <p>New Orleans Saints <strong>-6.5 (-110)</strong> vs Atlanta Falcons <strong>+6.5 (-110)</strong></p>
+              <p>The favored Saints must win by 7+ points for a successful bet.</p>
+              <p>The Falcons can lose by up to 6 points (or win) to cover the spread.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Totals (Over/Under)</h3><span class="bet-badge">Great for NBA</span></div>
+          <div class="bet-type-body">
+            <p>Bet whether the combined score of both teams will be over or under the sportsbook's line.</p>
+            <div class="odds-example">
+              <p>LA Lakers <strong>over 230.5 (-110)</strong> vs Sacramento Kings <strong>under 230.5 (-110)</strong></p>
+              <p>Over: teams must score 231+ combined. Under: 230 or less.</p>
+            </div>
+          </div>
+        </div>
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Props</h3><span class="bet-badge">High Variety</span></div>
+          <div class="bet-type-body">
+            <p>Wagers on specific outcomes within a game, like player stats or special events, not just who wins.</p>
+            <div class="odds-example">
+              <p>Which NFL team will score the first touchdown?</p>
+              <p>(MLB) Tarik Skubal over/under 7.5 strikeouts</p>
+              <p>(NBA) Domantas Sabonis over/under 13.5 rebounds</p>
+            </div>
+          </div>
+        </div>
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Futures</h3><span class="bet-badge">Big Payouts</span></div>
+          <div class="bet-type-body">
+            <p>Wager on distant future outcomes, like who'll win the championship or lead the league in scoring.</p>
+            <div class="odds-example">
+              <p><strong>Super Bowl Winner</strong></p>
+              <p>Philadelphia Eagles +650 | Buffalo Bills +700 | Baltimore Ravens +700</p>
+              <p>Kansas City Chiefs +800 | Detroit Lions +950 | Cincinnati Bengals +1500</p>
+            </div>
+          </div>
+        </div>
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Parlays</h3><span class="bet-badge">Multiplied Odds</span></div>
+          <div class="bet-type-body">
+            <p>Two or more outcomes (legs) on the same ticket. You must win every leg and offers big payouts when successful.</p>
+            <div class="odds-example">
+              <p>3-leg parlay: New York Knicks to win -150 | Steph Curry over 24.5 pts -125 | Bijan Robinson to score a TD +115</p>
+              <p>$100 bet returns ~$647 total ($547 profit)</p>
+            </div>
+          </div>
+        </div>
+        <div class="bet-type-card">
+          <div class="bet-type-header"><h3>Live / In-Play Bet</h3><span class="bet-badge">Real-Time Action</span></div>
+          <div class="bet-type-body">
+            <p>Wager on action in the middle of games, with odds shifting in real time based on what's happening on the field.</p>
+            <div class="odds-example">
+              <p>Pre-match: New York Jets +165 vs Buffalo Bills -200</p>
+              <p>Jets go up 10–7 in Q1 → Live line: Jets <strong>-135</strong> vs Bills <strong>+115</strong></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile -->
+      <h2 id="mobile">Mobile Betting in the US 2026</h2>
+      <div class="prose">
+        <p>Most US online sportsbooks are designed for mobile first, so you don't need to download anything. Just open the site in your browser, and in most cases, it feels close to using a sports betting app, with quick load times, live odds that update as you watch, and easy, touch-screen navigation.</p>
+        <p>Whether you're on iPhone or Android, pull up the site, sign in, and you're good to go. You can access the same markets and perform all the same functions as on the desktop site, such as adding funds, claiming bonuses, placing bets, and cashing out, all on the move.</p>
+        <p>Our recommended US sportsbooks operate internationally, so they don't lock you to a single state. You can still log in and bet pretty much from anywhere, without the usual app restrictions.</p>
+      </div>
+
+      <!-- Legal -->
+      <h2 id="legal">Is Sports Betting Legal in the US?</h2>
+      <div class="prose">
+        <p>Rules around online sports betting vary from state to state in the US. A quick summary of the rules for each state is below.</p>
+        <p>What you need to remember is that the websites we review on this page are licensed and operated overseas, so aren't covered by laws in the USA. This means you can play at them safely and securely, knowing no individual player has ever been prosecuted for playing at them.</p>
+      </div>
+      <div class="legal-grid">
+        <div class="legal-card permitted">
+          <div class="legal-label">✅ Sports Betting is Permitted in:</div>
+          <div class="legal-states">California*, Hawaii*, Illinois, Iowa, Louisiana, Maryland, Massachusetts, Montana*, North Dakota*, New Hampshire, New Mexico, South Dakota*, Tennessee, West Virginia, and Wisconsin*.<br/><br/><em>*In these states, sports betting is only legal at retail outlets or tribal casinos.</em></div>
+        </div>
+        <div class="legal-card not-permitted">
+          <div class="legal-label">❌ Sports Betting is Not Permitted in:</div>
+          <div class="legal-states">Alabama, Alaska, Georgia, Idaho, Minnesota, Mississippi, Oklahoma, South Carolina, Texas, and Utah.</div>
+        </div>
+      </div>
+
+      <!-- Tips -->
+      <h2 id="tips">Five Tips for Betting at Online Sportsbooks</h2>
+      <div class="prose"><p>The following advice can help boost your chances of success at the best online sportsbooks.</p></div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-number">1</div><h3>Track Live Betting Odds</h3><p>When in-play betting, track live odds as frequently as possible. This allows you to jump on opportunities with good value and possibly use the cash-out feature to lock in profits.</p></div>
+        <div class="tip-card"><div class="tip-number">2</div><h3>Avoid Overloading Parlays</h3><p>Parlays can be decent bets when you do your research and keep the number of legs low. But US online betting sites make roughly 5% more vig per leg, so limit your parlays to 2–4 outcomes.</p></div>
+        <div class="tip-card"><div class="tip-number">3</div><h3>Watch Team News &amp; Stats</h3><p>Consistency is key when you're trying to win. We recommend monitoring team news, stats, and injuries for each bet in your preferred sports leagues and competitions.</p></div>
+        <div class="tip-card"><div class="tip-number">4</div><h3>Understand Bonus Requirements</h3><p>You'll have an easier time separating good betting bonuses from the bad when you understand T&amp;Cs. For example, 10x rollover gives you a much better chance at cashing out compared to 18x wagering requirements.</p></div>
+        <div class="tip-card"><div class="tip-number">5</div><h3>Stick to a Budget</h3><p>Figure out how much you can bet on sports each week/month and stick to that amount. The best online sports betting sites make this easier by providing tools for deposit and wagering limits.</p></div>
+      </div>
+
+      <!-- Final operator block -->
+      <div class="operator-list">
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/pulsz-logo.svg" alt="Pulsz Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">5.0</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">Get 130k GC + 65 FREE SC</div>
+          <a href="#" class="btn-play" id="play-pulsz-3">Play Now</a>
+        </div>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/crown-coins-casino_125x60_Standard_Logo_Betting_Casino_DarkBG.svg" alt="Crown Coins Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.9</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">1.5M CC + 75 SC FREE + Spin to Win up to 100 SC FREE</div>
+          <a href="#" class="btn-play" id="play-crown-2">Play Now</a>
+        </div>
+        <p class="tnc-note">No purchase necessary. New users only. Void where prohibited by law. See T&amp;Cs. 19+</p>
+        <div class="operator-card">
+          <div class="operator-logo-wrap"><img src="./assets/MegaBonanza_3_2.svg" alt="MegaBonanza Logo"/></div>
+          <div class="operator-rating"><span class="rating-score">4.8</span><span class="rating-denom">/5</span></div>
+          <div class="operator-bonus">300% Value on Sign up — 300,000 GC + 22 FREE SC For $9.99</div>
+          <a href="#" class="btn-play" id="play-mega-2">Play Now</a>
+        </div>
+      </div>
+      <div class="show-more-wrap"><button class="btn-show-more" id="show-more-btn-2">▼ Show More</button></div>
+
+      <!-- FAQs -->
+      <h2 id="faq">FAQs</h2>
+      <div class="faq-list">
+        <div class="faq-item" id="faq-1">
+          <button class="faq-question" onclick="toggleFaq('faq-1')" aria-expanded="false">How do I choose the best online sports betting sites?<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">Key factors to consider when looking for the best betting sites online include payout speed, bonuses, and market variety. You should also make sure an online sportsbook has plenty of payment options.</div>
+        </div>
+        <div class="faq-item" id="faq-2">
+          <button class="faq-question" onclick="toggleFaq('faq-2')" aria-expanded="false">Can you trust international online sportsbooks?<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">Yes, you can trust all the online sports betting sites that we recommend. The best sports betting sites online also use high-level encryption to keep their websites and your data safe.</div>
+        </div>
+        <div class="faq-item" id="faq-3">
+          <button class="faq-question" onclick="toggleFaq('faq-3')" aria-expanded="false">Do online sportsbooks offer live streaming?<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">Some of the best betting websites provide live streaming for certain events. You'll usually find these live sports and esports streams via the bookmaker's in-play betting section.</div>
+        </div>
+        <div class="faq-item" id="faq-4">
+          <button class="faq-question" onclick="toggleFaq('faq-4')" aria-expanded="false">What are wagering requirements?<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">You must meet wagering requirements (a.k.a., rollover) before cashing out winnings from a sportsbook bonus. For example, 10x rollover would require you to bet the bonus 10 times over. Many of the best betting sites online have 5x–10x bonus rollover.</div>
+        </div>
+        <div class="faq-item" id="faq-5">
+          <button class="faq-question" onclick="toggleFaq('faq-5')" aria-expanded="false">How do I withdraw money from online betting sites?<span class="faq-chevron">▼</span></button>
+          <div class="faq-answer">The first step is to ensure you have enough to make a bookmaker's minimum withdrawal. Most sports betting online sites require between a $10 and $25 minimum cashout. Next, visit the cashier section, choose a payout method, and enter how much you're cashing out. Common methods include crypto and bank transfer.</div>
+        </div>
+      </div>
+
+      <!-- Affiliate -->
+      <div class="affiliate-note">
+        <span class="info-icon">ℹ️</span>
+        <div>The Escapist is supported by our audience. When you purchase through links on our site, we may earn a small affiliate commission. <a href="#">Learn more about our Affiliate Policy</a></div>
+      </div>
+
+      <!-- Related Content -->
+      <h2 id="related">Related Content</h2>
+      <div class="related-grid">
+        <a href="#" class="related-card" id="related-nz-casino">
+          <img src="./assets/best-online-casinos-new-zealand-2026-3-260x146.webp" alt="Best Online Casinos NZ" class="related-img" loading="lazy"/>
+          <div class="related-body">
+            <div class="related-title">Best Online Casinos NZ 2026: Top Picks for Kiwi Players</div>
+            <div class="related-author">👤 Lewis Mitchell</div>
+          </div>
         </a>
-      </section>
+        <a href="#" class="related-card" id="related-bitcoin">
+          <img src="./assets/best-bitcoin-sweepstakes-casinos-2026-260x146.webp" alt="Best Bitcoin Sweepstakes Casinos" class="related-img" loading="lazy"/>
+          <div class="related-body">
+            <div class="related-title">Best Bitcoin Sweepstakes Casinos for 2026</div>
+            <div class="related-author">👤 Charlie Pearson</div>
+          </div>
+        </a>
+        <a href="#" class="related-card" id="related-nz-betting">
+          <img src="./assets/best-nz-betting-sites-2026-1-260x146.webp" alt="Best NZ Betting Sites 2026" class="related-img" loading="lazy"/>
+          <div class="related-body">
+            <div class="related-title">Best NZ Betting Sites 2026 | Top Picks for Kiwi Bettors</div>
+            <div class="related-author">👤 Lewis Mitchell</div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Author Box -->
+      <div class="author-box">
+        <div class="author-box-avatar-fallback">CP</div>
+        <div>
+          <div class="author-box-role">iGaming Editor</div>
+          <div class="author-box-name">Charlie Pearson</div>
+          <div class="author-box-bio">Charlie has been writing about betting and gambling for over six years and loves it more every day. He thinks the greatest thrills you can have are uncovering a value bet in an NFL game week, finding a great game at a new casino, and betting live on esports. More recently, emerging betting markets like esports have been his focus, and that's what brought him to The Escapist. Now that he's here, he's keen to help regular esports fans and those new to the game (pun intended) learn about it and all the betting opportunities it presents.</div>
+          <div class="author-socials"><a href="#" class="social-btn" id="author-linkedin">🔗 LinkedIn</a></div>
+        </div>
+      </div>
+
     </main>
-  </body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" aria-label="Table of contents">
+      <div class="toc-card">
+        <div class="toc-header">📋 Table of Contents</div>
+        <ul class="toc-list">
+          <li><a href="#bonuses">Bonuses at the Best Online Sportsbooks</a></li>
+          <li><a href="#sports">Popular Sports</a></li>
+          <li><a href="#banking">Banking Methods</a></li>
+          <li><a href="#criteria">What to Look for</a></li>
+          <li><a href="#bet-types">Popular Bet Types</a></li>
+          <li><a href="#mobile">Mobile Betting in the US 2026</a></li>
+          <li><a href="#legal">Is Sports Betting Legal in the US?</a></li>
+          <li><a href="#tips">Five Tips for Betting</a></li>
+          <li><a href="#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div class="toc-card sidebar-pick">
+        <div class="toc-header">🏆 Top Pick</div>
+        <div class="sidebar-pick-body">
+          <div class="sidebar-pick-logo">
+            <img src="./assets/pulsz-logo.svg" alt="Pulsz"/>
+          </div>
+          <div class="sidebar-pick-score">5.0 <span>/5</span></div>
+          <div class="sidebar-pick-label">Editor's Choice</div>
+          <div class="sidebar-pick-bonus">Get 130k GC + 65 FREE SC</div>
+          <a href="#" class="btn-play" id="sidebar-play" style="width:100%;text-align:center;">Play Now</a>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-logo"><img src="./assets/escapist-logo.svg" alt="Escapist Magazine"/></div>
+          <div class="footer-tagline">For the mature enthusiast of escapist entertainment</div>
+        </div>
+        <div class="footer-links">
+          <a href="#">About Us</a>
+          <a href="#">Contact Us</a>
+          <a href="#">Editorial Policy</a>
+          <a href="#">Escapist Staff</a>
+          <a href="#">Responsible Gambling Guide</a>
+          <a href="#">Terms of Service</a>
+        </div>
+        <div class="footer-social">
+          <a href="#" aria-label="RSS" id="footer-rss">📡</a>
+          <a href="#" aria-label="Twitch" id="footer-twitch">🎮</a>
+          <a href="#" aria-label="Twitter" id="footer-twitter">𝕏</a>
+          <a href="#" aria-label="Facebook" id="footer-facebook">f</a>
+          <a href="#" aria-label="YouTube" id="footer-youtube">▶</a>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2026 The Escapist. All rights reserved. Gambling can be addictive. Please play responsibly. 18+</div>
+    </div>
+  </footer>
+
+  <script>
+    function toggleFaq(id) {
+      const item = document.getElementById(id);
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(el => {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
+      }
+    }
+    const sections = document.querySelectorAll('h2[id]');
+    const tocLinks = document.querySelectorAll('.toc-list a');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocLinks.forEach(link => { link.style.color = ''; link.style.borderLeftColor = ''; });
+          const active = document.querySelector('.toc-list a[href="#' + entry.target.id + '"]');
+          if (active) { active.style.color = 'var(--color-accent)'; active.style.borderLeftColor = 'var(--color-accent)'; }
+        }
+      });
+    }, { rootMargin: '-20% 0% -60% 0%', threshold: 0 });
+    sections.forEach(s => observer.observe(s));
+  </script>
+</body>
 </html>
