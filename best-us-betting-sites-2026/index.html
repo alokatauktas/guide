@@ -23,7 +23,13 @@
       <a href="#top" class="site-logo">
         <span>Guide</span>
       </a>
-      <nav aria-label="Primary navigation">
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav"
+        aria-label="Open navigation menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary navigation">
         <ul class="header-nav">
           <li><a href="#bonuses">Bonuses</a></li>
           <li><a href="#sports">Sports</a></li>
@@ -790,6 +796,24 @@
   </footer>
 
   <script>
+    function closeMobileNav() {
+      const siteHeader = document.querySelector('.site-header');
+      const navToggle = document.querySelector('.nav-toggle');
+      if (!siteHeader || !navToggle) return;
+      siteHeader.classList.remove('nav-open');
+      navToggle.setAttribute('aria-expanded', 'false');
+      navToggle.setAttribute('aria-label', 'Open navigation menu');
+    }
+
+    function toggleMobileNav() {
+      const siteHeader = document.querySelector('.site-header');
+      const navToggle = document.querySelector('.nav-toggle');
+      if (!siteHeader || !navToggle) return;
+      const isOpen = siteHeader.classList.toggle('nav-open');
+      navToggle.setAttribute('aria-expanded', String(isOpen));
+      navToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+    }
+
     function toggleFaq(id) {
       const item = document.getElementById(id);
       const isOpen = item.classList.contains('open');
@@ -802,6 +826,21 @@
         item.querySelector('.faq-question').setAttribute('aria-expanded', 'true');
       }
     }
+
+    document.querySelector('.nav-toggle')?.addEventListener('click', toggleMobileNav);
+    document.querySelectorAll('.header-nav a').forEach(link => {
+      link.addEventListener('click', closeMobileNav);
+    });
+
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 520) closeMobileNav();
+    });
+
+    document.addEventListener('click', (event) => {
+      const siteHeader = document.querySelector('.site-header');
+      if (!siteHeader?.classList.contains('nav-open')) return;
+      if (!event.target.closest('.header-inner')) closeMobileNav();
+    });
   </script>
 </body>
 
