@@ -108,6 +108,11 @@ a:hover { color: var(--color-accent-hover); }
 
 @media (max-width: 600px) { .banner-card-body { flex-direction: column; align-items: flex-start; } .banner-card-body .btn-play { width: 100%; justify-content: center; } }
 
+.banner-card-link { text-decoration: none; display: block; color: inherit; }
+.banner-card-link:hover .banner-card { box-shadow: 0 6px 24px rgba(37,99,235,0.15); transform: translateY(-2px); }
+.banner-card-link:hover .btn-play { background: #1d4ed8; }
+
+
 
 /* SHOW MORE */
 .show-more-wrap { text-align: center; margin: 8px 0 32px; }
